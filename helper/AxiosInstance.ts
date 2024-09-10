@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "127.0.0.1:8080", // Replace with your API base URL
+  baseURL: "http://127.0.0.1:8080", // Replace with your API base URL
   timeout: 30000, // Request timeout in milliseconds
 });
 
