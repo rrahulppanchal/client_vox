@@ -33,10 +33,12 @@ import {
   AccordionDetails,
   AccordionGroup,
   AccordionSummary,
+  Badge,
   accordionClasses,
   accordionDetailsClasses,
   accordionSummaryClasses,
 } from "@mui/joy";
+import Bell from "@/assets/icons/Bell";
 
 function Toggler({
   defaultExpanded = false,
@@ -146,7 +148,17 @@ export default function Sidebar() {
           </IconButton>
           <Typography level="title-lg">VoxQ Co.</Typography>
         </Box>
-        <ColorSchemeToggle />
+
+        <Badge badgeContent="" color="danger" size="sm">
+          <IconButton
+            variant="soft"
+            color="neutral"
+            size="sm"
+          >
+            <Bell />
+          </IconButton>
+        </Badge>
+        {/* <ColorSchemeToggle /> */}
       </Box>
       <Box
         sx={{
